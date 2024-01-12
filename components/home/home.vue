@@ -1,10 +1,10 @@
 <script setup>
 const {data} = useFetch('/api/todo/a8f0c268-3da5-480f-9b00-bdda5142c71e', {
-  method: "DELETE",
-  // body: {
-  //   task: 'adafsd',
-  //   "is_completed": true
-  // },
+  method: "PUT",
+  body: {
+    task: 'adafsd',
+    "is_completed": true
+  },
 })
 </script>
 <template>

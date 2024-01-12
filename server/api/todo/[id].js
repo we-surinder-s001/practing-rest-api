@@ -3,6 +3,13 @@ import {db} from '../../db'
 export default defineEventHandler(async (event) => {
     const {method} = event.node.req
     const {params} = event.context
+    const did_found = db.todos.find((todo) => {
+        return todo.id === params.id
+    })
+    if (!did_found) {
+        return new Error("item not available")
+    }
+
     switch (method) {
         case 'PUT':
             const {task, is_completed} = await readBody(event);

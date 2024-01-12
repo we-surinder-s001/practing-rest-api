@@ -1,4 +1,4 @@
-import {db} from '../../db/index'
+import {db} from '../../db'
 import {v4 as uuid} from 'uuid'
 
 export default defineEventHandler(async (event) => {
@@ -20,7 +20,7 @@ export default defineEventHandler(async (event) => {
                 db.todos.push(new_task)
                 return new_task
             } catch (e) {
-                return console.log(e)
+                return e
             }
     }
 })

@@ -20,7 +20,7 @@ useHead({
   <header class="header-cover">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <NuxtLink class="navbar-brand" to="#">Nuxt3</NuxtLink>
+        <NuxtLink class="navbar-brand" to="/about">Nuxt3</NuxtLink>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

@@ -1,0 +1,57 @@
+<script setup>
+useHead({
+  script: [
+    {
+      src: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js",
+      integrity:
+          "sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL",
+      crossorigin: "anonymous",
+    }
+  ],
+});
+</script>
+<template>
+  <Head>
+    <Title>Practice Rest APIs in Nuxt3</Title>
+    <Meta name="description" content="Nothing Special!"/>
+    <Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+  </Head>
+  <header class="header-cover">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <NuxtLink class="navbar-brand" to="#">Nuxt3</NuxtLink>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <NuxtLink class="nav-link active" aria-current="page" to="/">Home</NuxtLink>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <slot/>
+  <footer class="text-center">
+    here we are practicing Rest APIs in Nuxt3.
+  </footer>
+</template>
+
+<style scoped>
+.text-center {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.header-cover {
+  margin-bottom: 2em;
+}
+</style>
